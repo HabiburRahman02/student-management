@@ -1,9 +1,8 @@
 
-
-const AboutUs = props => {
+const AboutUs = () => {
     return (
-        <div className='bg-gray-100'>
-            <div className='py-10'>
+        <div className=''>
+            <div className='py-20'>
                 <div className='text-center max-w-6xl mx-auto space-y-3 p-2'>
                     <h1 className='text-5xl font-bold'>About Us</h1>
                     <p className='text-lg'> Sherpur Polytechnic Institute is a renowned technical institution committed to delivering quality education and practical skills. With a focus on hands-on learning, experienced faculty, and industry partnerships, it equips students for successful careers in engineering, technology, and vocational fields, fostering innovation and growth. </p>
@@ -53,8 +52,8 @@ const AboutUs = props => {
                         </div>
                     </div>
 
-                   
-                   
+
+
 
                 </div>
             </div>

@@ -7,17 +7,19 @@ import NavbarLatest from "../Navbar/NavbarLatest";
 const MainLayout = () => {
     return (
         <div>
-            {/* navnar */}
-            <div>
-                <Navbar></Navbar>
+
+            <div className="">
+                {/* <Navbar></Navbar> */}
                 <NavbarLatest></NavbarLatest>
             </div>
-            {/* outlet */}
-            <div className='min-h-[calc(100vh-350px)]' >
+
+            <div className='max-w-[1400px] mx-auto' >
                 <Outlet ></Outlet>
             </div>
-            {/* footer */}
-            <Footer></Footer>
+
+            <div>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };
