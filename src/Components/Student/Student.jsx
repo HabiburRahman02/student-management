@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const Student = ({ studentData }) => {
-    const { name, roll, registration, semester, image, shift,address,email,phone } = studentData;
+    const { name, roll, registration, semester, image, shift, address, email, phone } = studentData;
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <div>
-            <div className="card w-full bg-base-100 gap-3 shadow-xl">
-                <figure className="w-full h-[290px] md:h-72 p-2">
+            <div className="card w-full h-full bg-base-100 gap-4 shadow-xl">
+                <figure className="w-full h-[290px] object-cover md:h-72 p-2">
                     <img className="w-full rounded-2xl object-cover"
                         src={image}
                         alt="Shoes" />

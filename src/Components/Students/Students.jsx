@@ -6,7 +6,7 @@ const Students = props => {
     const allStudentsData = useLoaderData();
     const [filteredData, setFilteredData] = useState(allStudentsData);
     const [activeShift, setActiveShift] = useState("all");
-    const [studentLength , setStudentLength] = useState(allStudentsData)
+    const [studentLength, setStudentLength] = useState(allStudentsData)
 
     const handleFilter = (shift) => {
         setActiveShift(shift);

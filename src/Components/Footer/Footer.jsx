@@ -1,13 +1,11 @@
 
-import logo from '../../assets/spiLogo.png'
-
 const Footer = () => {
     return (
         <div>
             <div id="goFooter">
-                <footer className="footer footer-center bg-green-400 text-primary-content p-10">
-                    <aside className='text-black'>
-                        <img className='max-w-[100px]' src={logo} alt="" />
+                <footer className="footer footer-center bg-[rgb(37,168,214)] text-white p-10">
+                    <aside className=''>
+                        <h4 className="text-3xl font-semibold hidden md:block" to='/'> S P I</h4>
                         <p className="font-bold">
                             Sherpur Polytechnic Institute
                             <br />
@@ -15,7 +13,7 @@ const Footer = () => {
                         </p>
                     </aside>
                     <nav>
-                        <div className="grid grid-flow-col gap-4 text-black">
+                        <div className="grid grid-flow-col gap-4 ">
                             <a>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +48,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                         </div>
-                        <p className='text-black'>Copyright © {new Date().getFullYear()} - All right reserved</p>
+                        <p className=''>Copyright © {new Date().getFullYear()} - All right reserved</p>
                     </nav>
                 </footer>
             </div>

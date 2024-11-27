@@ -1,5 +1,4 @@
 
-import PropTypes from 'prop-types';
 import Banner from '../Banner/Banner';
 import AboutUs from '../AboutUs/AboutUs';
 import Departments from '../Departments/Departments';
@@ -29,8 +28,5 @@ const Home = () => {
     );
 };
 
-Home.propTypes = {
-
-};
 
 export default Home;
