@@ -35,7 +35,7 @@ const Departments = props => {
 
     return (
         <div>
-            <div className='bg-gray-100'>
+            <div>
                 <div className='py-10'>
                     <div className='text-center max-w-6xl mx-auto space-y-3 p-2'>
                         <h1 className='text-5xl font-bold'>Our Departments</h1>
@@ -44,9 +44,9 @@ const Departments = props => {
                         </p>
                     </div>
 
-                    <div className='border-2 bg-green-200 border-[#5bec91]  container mx-auto my-5 p-10 rounded-xl flex flex-col gap-5'>
+                    <div className=' mx-auto my-5 p-10 rounded-xl flex flex-col gap-5'>
 
-                        <div className="card card-side border-2 border-[#5bec91] bg-gray-100 transition hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
+                        <div className="card card-side bg-white shadow-xl transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
                             {/* Image Section */}
                             <figure className="w-full lg:w-2/5">
                                 <img
@@ -77,10 +77,10 @@ const Departments = props => {
                         </div>
 
 
-                        <div className="card card-side border-2 border-[#5bec91] bg-gray-100 transition hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
+                        <div className="card card-side shadow-xl bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
 
                             {/* Text Section */}
-                            <div className="card-body lg:w-3/5 p-4">
+                            <div className="card-body  lg:w-3/5 p-4">
                                 <h2 className="card-title text-2xl font-bold">Diploma in Electrical Engineering</h2>
                                 <p className='text-lg mt-2'>
 
@@ -100,7 +100,7 @@ const Departments = props => {
                             </div>
 
                             {/* Image Section */}
-                            <figure className="w-full lg:w-2/5">
+                            <figure className="w-full lg:w-2/5 ">
                                 <img
                                     className='h-full p-2 rounded-2xl object-cover'
                                     src="https://i.postimg.cc/Z5wcRMGb/Whats-App-Image-2024-11-07-at-6-28-11-PM-2.jpg"
@@ -110,7 +110,7 @@ const Departments = props => {
 
 
 
-                        <div className="card card-side border-2 border-[#5bec91] bg-gray-100 transition hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
+                        <div className="card card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
                             {/* Image Section */}
                             <figure className="w-full lg:w-2/5">
                                 <img
@@ -120,7 +120,7 @@ const Departments = props => {
                             </figure>
 
                             {/* Text Section */}
-                            <div className="card-body lg:w-3/5 p-4">
+                            <div className="card-body  lg:w-3/5 p-4">
                                 <h2 className="card-title text-2xl font-bold">Diploma in Electornics Engineering</h2>
                                 <p className='text-lg mt-2'>
 
@@ -140,7 +140,7 @@ const Departments = props => {
                             </div>
                         </div>
 
-                        <div className="card card-side border-2 border-[#5bec91] bg-gray-100 transition hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
+                        <div className="card card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
                             {/* Text Section */}
                             <div className="card-body lg:w-3/5 p-4">
                                 <h2 className="card-title text-2xl font-bold">Diploma in Cevil Engineering</h2>

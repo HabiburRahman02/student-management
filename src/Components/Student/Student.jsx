@@ -7,7 +7,7 @@ const Student = ({ studentData }) => {
         <div>
             <div className="card w-full h-full bg-base-100 gap-4 shadow-xl">
                 <figure className="w-full h-[290px] object-cover md:h-72 p-2">
-                    <img className="w-full rounded-2xl object-cover"
+                    <img className="w-full rounded-xl object-cover"
                         src={image}
                         alt="Shoes" />
                 </figure>
