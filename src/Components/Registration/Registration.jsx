@@ -1,90 +1,83 @@
 
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Registration = props => {
+import { IoClose } from "react-icons/io5";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
+import img from '../../assets/register4.png'
+
+const Registration = () => {
+
+    const [showPass, setShowPass] = useState(false);
+
     return (
-        <div className='flex flex-col justify-center items-center min-h-[585px] bg-gray-200'>
-            <div className='flex flex-col max-w-[300px] border-2 border-green-500 p-3 rounded-xl bg-green-200 justify-center items-center gap-y-2'>
-                <div>
-                    <h1 className='text-3xl font-bold'>Registration</h1>
+        <div className="py-20">
+            <div className="lg:flex max-w-7xl mx-auto items-center justify-between gap-6 p-1 lg:px-24 bg-ray-100">
+                <div >
+                    <img className="w-full" src={img} alt="" />
                 </div>
+                <div className="lg:w-1/2 bg-white shadow-2xl p-4 lg:p-12">
+                    <div className="flex justify-end relative">
+                        <Link to='/'>
+                            <button className="absolute top-3 right-3">
+                                <IoClose className="text-3xl text-red-600 hover:text-red-700"></IoClose>
+                            </button>
+                        </Link>
+                    </div>
+                    <div>
+                        <div className="text-center space-y-1 mb-4">
+                            <h3 className="text-4xl font-bold">Sign Up</h3>
+                            <p className="font-medium">Sign Up into your pages account</p>
+                        </div>
+                        <form className="mb-6 ">
+                            <div className="form-control mb-3">
+                                <label className="label">
+                                    <span className="label-text text-lg text-gray-500">Name</span>
+                                </label>
+                                <input type="text" name='name' placeholder="Enter name" className="border-2 p-4" required />
+                            </div>
+                            <div className="form-control mb-3">
+                                <label className="label">
+                                    <span className="label-text text-lg text-gray-500">Photo Url</span>
+                                </label>
+                                <input type="text" name='photo' placeholder="Enter photo url" className="border-2 p-4" required />
+                            </div>
+                            <div className="form-control mb-3">
+                                <label className="label">
+                                    <span className="label-text text-lg text-gray-500">Email Address*</span>
+                                </label>
+                                <input type="email" name='email' placeholder="ami@tmi.com" className="border-2 p-4" required />
+                            </div>
+                            <div className="form-control relative mb-4">
+                                <label className="label">
+                                    <span className="label-text text-lg text-gray-500">Password*</span>
+                                </label>
+                                <input type={showPass ? "text" : "password"} name='password' placeholder="*********" className="border-2 p-4" required />
+                                <span className='absolute top-[60px] right-2'
+                                    onClick={() => setShowPass(!showPass)}>
+                                    {
+                                        showPass ? <FaEyeSlash className='text-2xl'></FaEyeSlash>
+                                            : <FaEye className='text-2xl'></FaEye>
+                                    }
+                                </span>
+                            </div>
+                            <div className="form-control mt-6">
+                                <button className=" bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-5 text-white font-bold">Sign Up</button>
+                            </div>
 
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-                    </svg>
-                    <input type="text" className="grow" placeholder="Username" />
-                </label>
+                            <div className="divider text-gray-400">Login With</div>
+                            {/* <SocialLogin></SocialLogin> */}
+                            <div className='mt-3 text-center font-medium text-gray-500 text-lg'>
+                                <p>Already have an account? got to! <Link to='/login' className='text-blue-500 hover:text-green-500'>Login</Link></p>
+                            </div>
+                        </form>
+                    </div>
 
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                        <path
-                            d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-                    </svg>
-                    <input type="text" className="grow" placeholder="Email" />
-                </label>
-
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            fillRule="evenodd"
-                            d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-                            clipRule="evenodd" />
-                    </svg>
-                    <input type="password" className="grow" placeholder='Password' />
-                </label>
-
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            fillRule="evenodd"
-                            d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z"
-                            clipRule="evenodd" />
-                    </svg>
-                    <input type="" className="grow" placeholder='Confirm password' />
-                </label>
-
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <input type="number" className="grow" placeholder='Phone Numbar' />
-                </label>
-                <label className="input input-bordered flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h5l2 3h9a2 2 0 0 1 2 2v2M19 15v6M16 18h6" /></svg>
-                    <input type="address" className="grow" placeholder='Address' />
-                </label>
-                <div>
-                    <input className='w-[250px]' type="file" name="" id="" />
-                </div>
-                <div className='space-x-3'>
-                    <Link className='btn rounded-full'>Registration</Link>
                 </div>
             </div>
         </div>
     );
-};
-
-Registration.propTypes = {
-
 };
 
 export default Registration;

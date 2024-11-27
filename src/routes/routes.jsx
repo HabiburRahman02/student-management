@@ -15,7 +15,7 @@ const routes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-                loader: ()=> fetch('../DeboloparData.json')
+                loader: () => fetch('../DeboloparData.json')
             },
             {
                 path: "/students",
@@ -29,11 +29,11 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/registrations",
-                element: <Registration />,
+                element: <Registration></Registration>
             },
             {
                 path: "/login",
-               element: <Login></Login>
+                element: <Login></Login>
             },
         ],
     },

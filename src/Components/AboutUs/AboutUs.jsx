@@ -11,7 +11,7 @@ const AboutUs = () => {
 
                 <div className='grid md:grid-cols-3 justify-items-center   items-center container mx-auto my-5 rounded-xl gap-5'>
                     <div className=''>
-                        <div className="card card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card h-full  card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'
@@ -25,7 +25,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div >
-                        <div className="card card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'
@@ -39,7 +39,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="card card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'
