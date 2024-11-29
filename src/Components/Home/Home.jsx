@@ -15,7 +15,9 @@ const Home = () => {
     return (
         <div>
             {/* Banner  */}
-            <BannerLatest></BannerLatest>
+            <div className='!max-w-[1500px] !mx-auto'>
+                <BannerLatest></BannerLatest>
+            </div>
             {/* <Banner></Banner> */}
             {/* About us */}
             <AboutUs></AboutUs>

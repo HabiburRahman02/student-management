@@ -6,7 +6,7 @@ const Teacher = ({ allTeacher }) => {
 
     return (
         <div>
-            <div className="card card-compact bg-base-100 shadow-xl">
+            <div className="card card-compact rounded-lg bg-white shadow-xl">
                 <figure>
                     <img className="w-full h-96" src={img} alt="Teacher" />
                 </figure>

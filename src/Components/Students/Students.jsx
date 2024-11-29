@@ -21,9 +21,9 @@ const Students = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto max-sm:p-5 mb-10 md:mb-20">
+        <div className="max-w-[1400px] mx-auto max-sm:p-5 mb-10 md:mb-20">
             <div className="sm:flex items-center justify-between mt-4 sm:mt-8">
-                <p className="text-lg md:text-xl font-bold bg-green-300 p-2 md:px-8 md:py-4 rounded-xl text-center">Total Student: {studentLength.length}</p>
+                <p className="text-lg md:text-xl font-bold bg-green-300 p-2 md:px-12 md:py-4 rounded-lg text-center">Total Student: {studentLength.length}</p>
                 <div className="flex gap-4 max-sm:justify-center items-center max-sm:mt-4">
                     <div className="form-control">
                         <input

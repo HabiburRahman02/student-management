@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import img from '../../assets/register4.png'
+import SocialLogin from "../SocialLogin";
 
 const Registration = () => {
 
@@ -67,7 +68,7 @@ const Registration = () => {
                             </div>
 
                             <div className="divider text-gray-400">Login With</div>
-                            {/* <SocialLogin></SocialLogin> */}
+                            <SocialLogin></SocialLogin>
                             <div className='mt-3 text-center font-medium text-gray-500 text-lg'>
                                 <p>Already have an account? got to! <Link to='/login' className='text-blue-500 hover:text-green-500'>Login</Link></p>
                             </div>

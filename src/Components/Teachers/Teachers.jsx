@@ -61,7 +61,7 @@ const Teachers = props => {
     };
 
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-[1400px] mx-auto mb-10 md:mb-20'>
             <div className='mt-5 sm:mt-10 flex flex-wrap gap-2 sm:gap-7'>
                 <div className="dropdown dropdown-bottom sm:hidden">
                     <div tabIndex={0} role="button" className="bg-purple-500 text-base font-semibold text-white p-3 rounded-xl">
@@ -107,7 +107,7 @@ const Teachers = props => {
                 </div>
                 <div className='w-full sm:w-5/6 mt-5 sm:mt-10'>
                     <div>
-                        <div className="card card-compact bg-base-100 shadow-lg md:px-9">
+                        <div className="card card-compact rounded-lg bg-base-100 shadow-lg md:px-9">
                             <figure className='max-sm:w-full'>
                                 <img className='h-96 object-cover' src={principal} alt="Principal" />
                             </figure>

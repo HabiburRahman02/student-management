@@ -9,7 +9,7 @@ const AboutUs = () => {
                     <p className='text-lg'> Sherpur Polytechnic Institute is a renowned technical institution committed to delivering quality education and practical skills. With a focus on hands-on learning, experienced faculty, and industry partnerships, it equips students for successful careers in engineering, technology, and vocational fields, fostering innovation and growth. </p>
                 </div>
 
-                <div className='grid md:grid-cols-3 justify-items-center   items-center container mx-auto my-5 gap-5'>
+                <div className='grid md:grid-cols-3 justify-items-center   items-center my-5 gap-5'>
                     <div className=''>
                         <div className="card rounded-lg h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>

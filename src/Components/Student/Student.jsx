@@ -20,7 +20,7 @@ const Student = ({ studentData }) => {
                     <p>Regi: {registration}</p>
                     <p>Shift: {shift}</p>
                     <div className="card-actions justify-center">
-                        <button onClick={() => setIsModalOpen(true)} className="bg-[rgb(37,168,214)] p-3 rounded-lg text-white hover:bg-[rgb(10,132,176)] mt-2 w-full">Details</button>
+                        <button onClick={() => setIsModalOpen(true)} className="bg-[rgb(37,168,214)] p-3 rounded-lg text-white hover:bg-[rgb(10,132,176)] mt-4 w-full">Details</button>
                     </div>
 
                     {/* show modal start */}
@@ -37,13 +37,12 @@ const Student = ({ studentData }) => {
                                     <p><span className="font-semibold">Shift:</span> {shift}</p>
                                     <p><span className="font-semibold">Email:</span> {email}</p>
                                     <p><span className="font-semibold">Phone:</span> {phone}</p>
-                                    <p><span className="font-semibold">Phone:</span> {phone}</p>
                                     <p>Address: {address}</p>
                                 </div>
                                 <div className="modal-action justify-start mt-2">
                                     <button
                                         onClick={() => setIsModalOpen(false)}
-                                        className="bg-red-500 text-white px-6 py-3 rounded-lg"
+                                        className="bg-red-500 text-white px-6 py-3 rounded-lg w-full hover:bg-red-600"
                                     >
                                         Close
                                     </button>
