@@ -16,12 +16,14 @@ const Teacher = ({ allTeacher }) => {
                         <p><span className="font-semibold">Designation:</span> {designation}</p>
                         <p><span className="font-semibold">Faculty:</span> {faculty}</p>
                         <p><span className="font-semibold">Contact:</span> {personal_phone}</p>
-                        <button
-                            onClick={() => setIsModalOpen(true)}
-                            className="bg-green-500 hover:bg-purple-500 text-white p-3 rounded-xl text-xl"
-                        >
-                            Details
-                        </button>
+                        <div>
+                            <button
+                                onClick={() => setIsModalOpen(true)}
+                                className="bg-[rgb(37,168,214)] hover:bg-[rgb(10,132,176)] text-white p-3 rounded-lg text-xl w-full mt-2"
+                            >
+                                Details
+                            </button>
+                        </div>
                     </div>
 
                     {isModalOpen && (

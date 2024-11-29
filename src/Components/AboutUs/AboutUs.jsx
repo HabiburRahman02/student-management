@@ -9,9 +9,9 @@ const AboutUs = () => {
                     <p className='text-lg'> Sherpur Polytechnic Institute is a renowned technical institution committed to delivering quality education and practical skills. With a focus on hands-on learning, experienced faculty, and industry partnerships, it equips students for successful careers in engineering, technology, and vocational fields, fostering innovation and growth. </p>
                 </div>
 
-                <div className='grid md:grid-cols-3 justify-items-center   items-center container mx-auto my-5 rounded-xl gap-5'>
+                <div className='grid md:grid-cols-3 justify-items-center   items-center container mx-auto my-5 gap-5'>
                     <div className=''>
-                        <div className="card h-full  card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card rounded-lg h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'
@@ -20,12 +20,12 @@ const AboutUs = () => {
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">Our Mission 🎯</h2>
-                                <p>To empower students with quality technical education, fostering innovation and practical skills to prepare them for successful careers in technology and engineering fields.</p>
+                                <p>To empower students with quality technical education, fostering innovation and practical skills to prepare them for successful careers in technology and engineering fields in the world</p>
                             </div>
                         </div>
                     </div>
                     <div >
-                        <div className="card h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card rounded-lg h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'
@@ -39,7 +39,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div>
-                        <div className="card h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
+                        <div className="card rounded-lg h-full card-compact bg-white shadow-xl transition hover:scale-105 overflow-hidden pb-4">
                             <figure>
                                 <img
                                     className='p-5 rounded-2xl w-full h-[350px] object-cover'

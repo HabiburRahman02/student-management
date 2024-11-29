@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-[600px] bg-red-100">
+            <div className="hero min-h-[600px]">
                 <div className="hero-content text-center">
                     <div className="max-w-5xl space-y-3">
                         <h1 className="text-5xl font-bold text-black">Sherpur Polytechnic Institute</h1>

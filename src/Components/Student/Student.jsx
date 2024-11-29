@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
 const Student = ({ studentData }) => {
@@ -5,7 +6,7 @@ const Student = ({ studentData }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <div>
-            <div className="card w-full h-full bg-base-100 gap-4 shadow-xl">
+            <div className="card w-full h-full bg-base-100 gap-4 rounded-lg shadow-xl">
                 <figure className="w-full h-[290px] object-cover md:h-72 p-2">
                     <img className="w-full rounded-xl object-cover"
                         src={image}
@@ -18,8 +19,8 @@ const Student = ({ studentData }) => {
                     <p>Roll: {roll}</p>
                     <p>Regi: {registration}</p>
                     <p>Shift: {shift}</p>
-                    <div className="card-actions justify-end">
-                        <button onClick={() => setIsModalOpen(true)} className="bg-green-500 p-3 rounded-xl text-white hover:bg-purple-500">Details</button>
+                    <div className="card-actions justify-center">
+                        <button onClick={() => setIsModalOpen(true)} className="bg-[rgb(37,168,214)] p-3 rounded-lg text-white hover:bg-[rgb(10,132,176)] mt-2 w-full">Details</button>
                     </div>
 
                     {/* show modal start */}

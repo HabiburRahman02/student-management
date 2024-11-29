@@ -9,7 +9,7 @@ const FilterButton = ({ status, label, activeShift, onClick }) => {
     return (
         <button
             onClick={() => onClick(status)}
-            className={`font-bold rounded-xl p-2 w-full hover:bg-purple-600 ${activeShift === status ? 'bg-purple-500 text-white' : 'bg-green-500 text-white'}`}
+            className={`font-bold rounded-lg p-2 w-full hover:bg-[rgb(10,132,176)] ${activeShift === status ? 'bg-purple-500 text-white' : 'bg-[rgb(37,168,214)] text-white'}`}
         >
             {label}
         </button>
@@ -107,9 +107,9 @@ const Teachers = props => {
                 </div>
                 <div className='w-full sm:w-5/6 mt-5 sm:mt-10'>
                     <div>
-                        <div className="card card-compact bg-base-100 shadow-xl md:p-9">
+                        <div className="card card-compact bg-base-100 shadow-lg md:px-9">
                             <figure className='max-sm:w-full'>
-                                <img className='h-96' src={principal} alt="Principal" />
+                                <img className='h-96 object-cover' src={principal} alt="Principal" />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">Engineer Md. Sakhawat Hossain</h2>
@@ -117,7 +117,9 @@ const Teachers = props => {
                                     <p>Designation: Professor</p>
                                     <p>Email: principalspi1966@gmail.com</p>
                                     <p>Phone: 029988-13192</p>
-                                    <button onClick={() => setIsModalOpen(true)} className="bg-green-500 text-white p-3 rounded-xl text-xl hover:bg-purple-500">Details</button>
+                                    <div>
+                                        <button onClick={() => setIsModalOpen(true)} className="bg-[rgb(37,168,214)] text-white p-3 rounded-lg w-1/4 text-xl hover:bg-[rgb(10,132,176)] mt-2">Details</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
