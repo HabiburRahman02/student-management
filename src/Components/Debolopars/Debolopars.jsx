@@ -17,7 +17,9 @@ const Debolopars = ({ deboloparData }) => {
                 {
                     deboloparData.map((debolopars, index) =>
 
-                        <div key={index} className='border-b-2 shadow-xl rounded-xl bg-white  hover:scale-105 overflow-hidden transition-all'>
+                        <div key={index}
+
+                            className='border-b-2 shadow-xl rounded-xl bg-white  hover:scale-105 overflow-hidden transition-all'>
                             <div className="card">
                                 {/* <div className='border-2 border-gray-400 w-8 mx-auto h-3 rounded-lg mt-5'></div> */}
                                 <figure>

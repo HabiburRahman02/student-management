@@ -46,7 +46,7 @@ const Departments = props => {
 
                     <div className=' mx-auto my-5 p-10  flex flex-col gap-5'>
 
-                        <div className="card rounded-lg card-side bg-white shadow-xl transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400" className="card rounded-lg card-side bg-white shadow-xl transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
                             {/* Image Section */}
                             <figure className="w-full lg:w-2/5">
                                 <img
@@ -77,7 +77,7 @@ const Departments = props => {
                         </div>
 
 
-                        <div className="card rounded-lg card-side shadow-xl bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400" className="card rounded-lg card-side shadow-xl bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row lg:p-10">
 
                             {/* Text Section */}
                             <div className="card-body  lg:w-3/5 p-4">
@@ -110,7 +110,7 @@ const Departments = props => {
 
 
 
-                        <div className="card rounded-lg card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400" className="card rounded-lg card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
                             {/* Image Section */}
                             <figure className="w-full lg:w-2/5">
                                 <img
@@ -140,7 +140,7 @@ const Departments = props => {
                             </div>
                         </div>
 
-                        <div className="card rounded-lg card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
+                        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400" className="card rounded-lg card-side shadow-xl lg:p-10 bg-white transition-all hover:scale-105 overflow-hidden flex flex-col lg:flex-row">
                             {/* Text Section */}
                             <div className="card-body lg:w-3/5 p-4">
                                 <h2 className="card-title text-2xl font-bold">Diploma in Cevil Engineering</h2>

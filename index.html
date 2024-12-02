@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
- <link rel="shortcut icon" href="./src/assets/spiLogo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/assets/spiLogo.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
   <!-- font awassam cdn -->
   <script src="https://kit.fontawesome.com/408ea844fb.js" crossorigin="anonymous"></script>
   <title>SPI Student | Data Managment</title>
@@ -12,6 +13,10 @@
 
 <body>
   <div id="root"></div>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 

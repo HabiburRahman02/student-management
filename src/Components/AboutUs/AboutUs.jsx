@@ -2,7 +2,7 @@
 
 const AboutUs = () => {
     return (
-        <div className=''>
+        <div data-aos="zoom-in-up" className=''>
             <div className='py-10'>
                 <div className='text-center max-w-6xl mx-auto space-y-3 p-2'>
                     <h1 className='text-5xl font-bold'>About Us</h1>
