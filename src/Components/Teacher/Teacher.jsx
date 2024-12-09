@@ -39,14 +39,16 @@ const Teacher = ({ allTeacher }) => {
                         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                             <div className="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 lg:w-1/4">
                                 <img className="h-52 w-full sm:w-72" src={img} alt="" />
-                                <h3 className="font-bold text-lg mt-3">Name: {name}</h3>
-                                <div className="space-y-1 text-base mt-2">
-                                    <p><span className="font-semibold">Designation:</span> {designation}</p>
-                                    <p><span className="font-semibold">Faculty:</span> {faculty}</p>
-                                    <p><span className="font-semibold">Contact:</span> {personal_phone}</p>
-                                    <p><span className="font-semibold">Email:</span> {department}</p>
-                                    <p>{roomNo ? <span><span className="font-semibold"></span>Room No: {roomNo} </span> : <span className="text-base font-medium">Room No: N/A</span>}</p>
-                                </div>
+                                <Fade direction="up ">
+                                    <h3 className="font-bold text-lg mt-3">Name: {name}</h3>
+                                    <div className="space-y-1 text-base mt-2">
+                                        <p><span className="font-semibold">Designation:</span> {designation}</p>
+                                        <p><span className="font-semibold">Faculty:</span> {faculty}</p>
+                                        <p><span className="font-semibold">Contact:</span> {personal_phone}</p>
+                                        <p><span className="font-semibold">Email:</span> {department}</p>
+                                        <p>{roomNo ? <span><span className="font-semibold"></span>Room No: {roomNo} </span> : <span className="text-base font-medium">Room No: N/A</span>}</p>
+                                    </div>
+                                </Fade>
                                 <div className="modal-action justify-start mt-2">
                                     <button
                                         onClick={() => setIsModalOpen(false)}
