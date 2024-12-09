@@ -7,6 +7,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import img from '../../assets/login2.png'
 import SocialLogin from "../SocialLogin";
+import { Bounce } from "react-awesome-reveal";
 
 const Login = () => {
 
@@ -28,7 +29,9 @@ const Login = () => {
           </div>
           <div>
             <div className="text-center space-y-1 mb-4">
-              <h3 className="text-4xl font-bold">Login</h3>
+              <Bounce duration={2000}>
+                <h3 className="text-4xl font-bold">Login</h3>
+              </Bounce>
               <p className="font-medium">Login into your pages account</p>
             </div>
             <form className="mb-6 ">

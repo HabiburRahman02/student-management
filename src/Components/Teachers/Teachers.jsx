@@ -3,6 +3,7 @@ import principal from '../../assets/principal.jpg';
 import { useLoaderData } from 'react-router-dom';
 import Teacher from '../Teacher/Teacher';
 import { useEffect, useState } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 // ReUse Filter 
 const FilterButton = ({ status, label, activeShift, onClick }) => {
@@ -111,17 +112,21 @@ const Teachers = props => {
                             <figure className='max-sm:w-full'>
                                 <img className='h-96 object-cover' src={principal} alt="Principal" />
                             </figure>
+
                             <div className="card-body">
                                 <h2 className="card-title">Engineer Md. Sakhawat Hossain</h2>
                                 <div className='text-base space-y-1'>
-                                    <p>Designation: Professor</p>
-                                    <p>Email: principalspi1966@gmail.com</p>
-                                    <p>Phone: 029988-13192</p>
+                                    <Fade direction='down'>
+                                        <p>Designation: Professor</p>
+                                        <p>Email: principalspi1966@gmail.com</p>
+                                        <p>Phone: 029988-13192</p>
+                                    </Fade>
                                     <div>
                                         <button onClick={() => setIsModalOpen(true)} className="bg-[rgb(37,168,214)] text-white p-3 rounded-lg w-1/4 text-xl hover:bg-[rgb(10,132,176)] mt-2">Details</button>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         {/* modal start */}
                         <TeacherModal
