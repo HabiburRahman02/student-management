@@ -34,7 +34,7 @@ const BannerLatest = () => {
                             </p>
                             <Link to='/' >
                                 <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    Learn More
+                                    See More
                                 </button>
                             </Link>
                         </div>
@@ -56,7 +56,7 @@ const BannerLatest = () => {
                             </p>
                             <Link to='/'>
                                 <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    Learn More
+                                    See More
                                 </button>
                             </Link>
                         </div>
@@ -78,7 +78,7 @@ const BannerLatest = () => {
                             </p>
                             <Link to='/'>
                                 <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    Learn More
+                                    See More
                                 </button>
                             </Link>
                         </div>
