@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../../assets/spiLogo.png'
+import { Bounce } from "react-awesome-reveal";
 const NavbarLatest = () => {
     const links = <>
         <NavLink className={({ isActive }) => `mr-8 text-base font-medium ${isActive && ' border-b-[2px]'}`} to='/'>Home</NavLink>
@@ -32,7 +32,9 @@ const NavbarLatest = () => {
                         </ul>
                     </div>
                     <Link to='/' className="flex items-center gap-2">
-                        <h4 className="text-3xl font-semibold hidden md:block" to='/'> S P I</h4>
+                        <Bounce duration={3000}>
+                            <h4 className="text-3xl font-semibold hidden md:block" to='/'> S P I</h4>
+                        </Bounce>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

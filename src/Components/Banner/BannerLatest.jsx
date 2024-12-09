@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css'
+import { Fade, Zoom } from 'react-awesome-reveal';
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
@@ -28,14 +29,20 @@ const BannerLatest = () => {
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-3xl">
-                            <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
-                            <p className="mb-5">
-                                Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
-                            </p>
+                            <Fade direction='down'>
+                                <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
+                            </Fade>
+                            <Fade duration={2000} direction='up'>
+                                <p className="mb-5">
+                                    Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
+                                </p>
+                            </Fade>
                             <Link to='/' >
-                                <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    See More
-                                </button>
+                                <Zoom >
+                                    <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
+                                        See More
+                                    </button>
+                                </Zoom>
                             </Link>
                         </div>
                     </div>
@@ -50,14 +57,20 @@ const BannerLatest = () => {
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-3xl">
-                            <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
-                            <p className="mb-5">
-                                Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
-                            </p>
+                            <Fade direction='down'>
+                                <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
+                            </Fade>
+                            <Fade direction='up' duration={2000}>
+                                <p className="mb-5">
+                                    Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
+                                </p>
+                            </Fade>
                             <Link to='/'>
-                                <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    See More
-                                </button>
+                                <Zoom>
+                                    <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
+                                        See More
+                                    </button>
+                                </Zoom>
                             </Link>
                         </div>
                     </div>
@@ -72,14 +85,20 @@ const BannerLatest = () => {
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className="hero-content text-neutral-content text-center">
                         <div className="max-w-3xl">
-                            <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
-                            <p className="mb-5">
-                                Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
-                            </p>
+                            <Fade direction='down'>
+                                <h1 className="mb-5 text-5xl font-bold">Sherpur Polytechnic Institute</h1>
+                            </Fade>
+                            <Fade direction='up' duration={2000}>
+                                <p className="mb-5">
+                                    Welcome to Sherpur Polytechnic Institute! Founded with a vision to nurture technical excellence, we offer high-quality education in engineering and technology. Our skilled faculty, state-of-the-art facilities, and industry-driven curriculum prepare students for a successful future.
+                                </p>
+                            </Fade>
                             <Link to='/'>
-                                <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
-                                    See More
-                                </button>
+                                <Zoom>
+                                    <button className="bg-[rgb(37,168,214)] py-3 px-8  text-white font-bold hover:bg-[rgb(10,132,176)] transition-colors">
+                                        See More
+                                    </button>
+                                </Zoom>
                             </Link>
                         </div>
                     </div>

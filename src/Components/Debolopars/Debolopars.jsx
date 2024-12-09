@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import PropTypes from 'prop-types';
+import { Fade, Flip, JackInTheBox, Zoom } from 'react-awesome-reveal';
 
 const Debolopars = ({ deboloparData }) => {
 
@@ -23,17 +24,29 @@ const Debolopars = ({ deboloparData }) => {
                             <div className="card">
                                 {/* <div className='border-2 border-gray-400 w-8 mx-auto h-3 rounded-lg mt-5'></div> */}
                                 <figure>
-                                    <img
-                                        className='h-80 w-80 mt-6 rounded-full object-cover pb-0'
-                                        src={debolopars.image}
-                                        alt="car!" />
+                                    <Zoom duration={2000}>
+                                        <img
+                                            className='h-80 w-80 mt-6 rounded-full object-cover pb-0'
+                                            src={debolopars.image}
+                                            alt="car!" />
+                                    </Zoom>
                                 </figure>
                                 <div className="card-body">
-                                    <h2 className="card-title">{debolopars.name}</h2>
-                                    <p className='text-gray-500 font-bold'>{debolopars.title}</p>
-                                    <p><span className='font-bold'>Student at:</span> {debolopars.student}</p>
-                                    <p><span className='font-bold'>Phone:</span> {debolopars.phone}</p>
-                                    <p className='text-sm text-[#49b972]'>Email: {debolopars.email}</p>
+                                    <JackInTheBox duration={2000}>
+                                        <h2 className="card-title">{debolopars.name}</h2>
+                                    </JackInTheBox>
+                                    <Fade direction='up'>
+                                        <p className='text-gray-500 font-bold'>{debolopars.title}</p>
+                                    </Fade>
+                                    <Fade direction='up'>
+                                        <p><span className='font-bold'>Student at:</span> {debolopars.student}</p>
+                                    </Fade>
+                                    <Fade direction='up'>
+                                        <p><span className='font-bold'>Phone:</span> {debolopars.phone}</p>
+                                    </Fade>
+                                    <Fade direction='up'>
+                                        <p className='text-sm text-[#49b972]'>Email: {debolopars.email}</p>
+                                    </Fade>
                                 </div>
                             </div>
                         </div>
