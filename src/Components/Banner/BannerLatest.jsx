@@ -15,10 +15,10 @@ const BannerLatest = () => {
     return (
         <div className='mb-20'>
             <AutoplaySlider
-                play={true}
+                // play={true}
                 cancelOnInteraction={false}
                 interval={2000}
-                className='w-full md:h-[600px] h-[420px]' >
+                className='w-full md:h-[600px] h-[450px]' >
                 <div
                     className="hero min-h-screen"
                     style={{

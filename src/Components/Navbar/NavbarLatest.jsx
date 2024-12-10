@@ -27,7 +27,7 @@ const NavbarLatest = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="bg-[rgb(37,168,214)] text-white menu menu-sm dropdown-content rounded-box z-[1] mt-3 space-y-3 w-60 p-4 shadow">
+                            className="bg-[rgb(37,168,214)] text-white menu menu-sm dropdown-content rounded-box z-50 mt-3 space-y-3 w-60 p-6 shadow">
                             {links}
                         </ul>
                     </div>
