@@ -7,6 +7,19 @@ const Students = () => {
     const [filteredData, setFilteredData] = useState(allStudentsData);
     const [activeShift, setActiveShift] = useState("all");
     const [studentLength, setStudentLength] = useState(allStudentsData)
+    const [searchRoll, setSearchRoll] = useState("");
+
+    const handleSearch = e => {
+        const roll = e.target.value;
+        setSearchRoll(roll);
+
+        const filtered = allStudentsData.filter((user) =>
+            user.roll.toString().includes(roll)
+        );
+
+        setFilteredData(filtered);
+    };
+
 
     const handleFilter = (shift) => {
         setActiveShift(shift);
@@ -27,6 +40,8 @@ const Students = () => {
                 <div className="flex gap-4 max-sm:justify-center items-center max-sm:mt-4">
                     <div className="form-control">
                         <input
+                            value={searchRoll}
+                            onChange={handleSearch}
                             type="text"
                             placeholder="Type Roll Here"
                             className="input rounded-lg input-bordered w-30 md:w-auto"
@@ -60,7 +75,7 @@ const Students = () => {
                 <div className="max-sm:mt-5 md:w-4/5">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-3">
                         {
-                            filteredData.map((studentData) => <Student key={studentData.id} studentData={studentData}></Student>)
+                            filteredData?.map((studentData) => <Student key={studentData.id} studentData={studentData}></Student>)
                         }
                     </div>
                 </div>

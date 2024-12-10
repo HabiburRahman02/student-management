@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Student = ({ studentData }) => {
     const { name, roll, registration, semester, image, shift, address, email, phone } = studentData;
